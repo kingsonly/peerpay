@@ -1,0 +1,6 @@
+module Pods_Peerpay_PeerpayTests {
+  umbrella header "Pods-Peerpay-PeerpayTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

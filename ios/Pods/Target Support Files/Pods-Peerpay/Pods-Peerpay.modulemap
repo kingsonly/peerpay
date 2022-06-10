@@ -1,0 +1,6 @@
+module Pods_Peerpay {
+  umbrella header "Pods-Peerpay-umbrella.h"
+
+  export *
+  module * { export * }
+}
