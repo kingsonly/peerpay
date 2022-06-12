@@ -4,7 +4,15 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import IdCard from '../Auth/IdCard';
 import { Caption2, Input, Subcaption, Botton1, Avatar, Icon} from '../../Components/Widgets/Index';
 import dashboardimage from '../../Assets/Icons/dashboard.png';
+import request from '../../Assets/Icons/request.png';
+import afcsicon from '../../Assets/Icons/afcsicon.png';
+import qr from '../../Assets/Icons/qr.png';
+import profile from '../../Assets/Icons/portfolio.png';
 import Dashboard from '../../Components/Layouts/Dashboard.js';
+import Request from '../Request/Request.js';
+import Qr from '../QrCode/Qr.js';
+import Afcs from '../Afcs/Afcs.js';
+import Portfolio from '../Portfolio/Portfolio.js';
 const Tab = createBottomTabNavigator();
 
 
@@ -24,6 +32,50 @@ const Home = ({navigation})=>{
       headerShown: false,
        tabBarIcon: ({ color, size }) => (
          <Icon image={dashboardimage} name="home"  size={size}  />
+       ),
+     }}
+      />
+
+<Tab.Screen 
+     name="Request"
+     component={Request}
+     options={{
+      headerShown: false,
+       tabBarIcon: ({ color, size }) => (
+         <Icon image={request} name="home"  size={size}  />
+       ),
+     }}
+      />
+
+    <Tab.Screen 
+     name="QR Pay"
+     component={Qr}
+     options={{
+      headerShown: false,
+       tabBarIcon: ({ color, size }) => (
+         <Icon image={request} name="home"  size={size}  />
+       ),
+     }}
+      />
+
+<Tab.Screen 
+     name="AFCS"
+     component={Afcs}
+     options={{
+      headerShown: false,
+       tabBarIcon: ({ color, size }) => (
+         <Icon image={afcsicon} name="home"  size={size}  />
+       ),
+     }}
+      />
+
+<Tab.Screen 
+     name="Portfolio"
+     component={Portfolio}
+     options={{
+      headerShown: false,
+       tabBarIcon: ({ color, size }) => (
+         <Icon image={profile} name="home"  size={size}  />
        ),
      }}
       />

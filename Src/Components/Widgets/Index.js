@@ -294,11 +294,33 @@ const ChartSegment = ()=>{
 
 }
 
-const ServicesCard = ({icon})=> {
+const ServicesCard = ({image, label, ...rest})=> {
   return(
-    <View style={{flexDirection:'column', borderRadius: 8, width:104, height:104, backgroundColor:'white', marginTop:15, marginBottom:15}}>
-       <Image source={icon} style={{width:24, height:24}}/>
-    </View>
+    <TouchableOpacity style={{ color:'black',justifyContent:'center', flexDirection:'column', borderRadius: 8, width:104, height:104, backgroundColor:'white', marginTop:15, marginBottom:15}} {...rest}>
+      <View style={{flexDirection:'row', justifyContent:'center'}}>
+      <Image source={image} style={{width:24, height:24}}/>
+      </View>
+       <Text  style={{marginTop:10, marginLeft:10, marginRight:10, textAlign:'center', fontSize:15, fontWeight:'400'}}>{label}</Text>
+    </TouchableOpacity>
+  )
+}
+
+const TransCard = ({image, label, label1, label2, label3, ...rest})=> {
+  return(
+    <TouchableOpacity style={{ color:'black', padding:10, flexDirection:'row', borderRadius: 8, backgroundColor:'white', marginTop:15, marginBottom:15}} {...rest}>
+        <Image source={image} style={{width:56, height:56}}/>
+        <View style={{marginLeft:10, flexDirection:'column', justifyContent:'center'}}>
+         <Text style={{fontSize:15, fontWeight:'500'}}>{label}</Text>
+          <Text style={{marginTop:5,fontSize:13, fontWeight:'400', color:'#8A8A8F'}}>{label1}</Text>
+        </View>
+
+        <View style={{ flex:1, marginLeft:10, flexDirection:'column', justifyContent:'center'}}>
+         <Text style={{textAlign:'right', fontSize:15, fontWeight:'500'}}>{label2}</Text>
+          <Text style={{marginTop:5, textAlign:'right', fontSize:13, fontWeight:'400', color:'#8A8A8F'}}>{label3}</Text>
+        </View>
+
+      
+    </TouchableOpacity>
   )
 }
 
@@ -415,5 +437,6 @@ export {
   Subcaption,
   Input,
   ChartSegment, 
-  ServicesCard
+  ServicesCard,
+  TransCard
 };
