@@ -37,10 +37,10 @@ const Home = ({navigation})=>{
       />
 
 <Tab.Screen 
-     name="Request"
+     name="Requests"
      component={Request}
      options={{
-      headerShown: false,
+      headerShown: true,
        tabBarIcon: ({ color, size }) => (
          <Icon image={request} name="home"  size={size}  />
        ),
