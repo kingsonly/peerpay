@@ -323,8 +323,73 @@ const TransCard = ({image, label, label1, label2, label3, ...rest})=> {
     </TouchableOpacity>
   )
 }
+ const SmallBotton = ({label, style, ...rest})=>{
+   return(
+     <TouchableOpacity style={[styles.botton4, style]}  {...rest} >
+       <Text style={[styles.botton3text, style]}>{label}</Text>
+     </TouchableOpacity>
+   )
+ }
+
+ const RequestCard =({label1, label2, label3, label4, image, status, style, ...rest})=>{
+   return(
+     <View style={[styles.requestcard]} {...rest}> 
+      <View style={{flexDirection:'row'}}>
+      <Image source={image} style={{width:45, height:45, margin:10}}/>
+       <View style={{flexDirection:'column'}}>
+         <Text style={{fontSize:18, fontWeight:'400', marginTop:8}}>{label1}</Text>
+         <Text style={{ color:'#8A8A8F',fontSize:13, fontWeight:'400', marginTop:5}}>{label2}</Text>
+         <Text style={{fontSize:18, fontWeight:'400', marginTop:5}}>{label3}</Text>
+         <Text style={{ color:'#8A8A8F',fontSize:13, fontWeight:'400', marginTop:5, marginBottom:10}}>{label4}</Text>
+
+       </View>
+      </View>
+
+       <View style={[styles.statuscard, style]}>
+         <Text style={[styles.status, style]}>{status}</Text>
+       </View>
+
+     </View>
+   )
+ }
 
 const styles = StyleSheet.create({
+    statuscard :{
+      margin:10, height:24, borderRadius:360, backgroundColor:'#FF9500', justifyContent:'center'
+    },
+   status:{
+    color:'white', marginLeft:10, marginRight:10, fontSize:13
+   },
+  requestcard:{
+    flex:1,
+    marginLeft:5,
+    marginTop:25,
+    backgroundColor:'white',
+    borderRadius:10,
+    borderWidth:0.2,
+    borderColor:'#8A8A8F',
+    flexDirection:'row',
+    justifyContent:'space-between'
+
+
+  },
+
+  botton3text:{
+    textAlign:'center',
+    marginLeft:15,
+    marginRight:15,
+    fontSize:13
+    
+  },
+  botton4: {
+      height:29,
+      backgroundColor:'#60A061',
+      justifyContent:'center',
+      borderRadius:10,
+      marginLeft:5,
+      marginRight:5
+
+  },
   input: {
     height: 44,
     borderRadius: 5,
@@ -438,5 +503,7 @@ export {
   Input,
   ChartSegment, 
   ServicesCard,
-  TransCard
+  TransCard,
+  SmallBotton,
+  RequestCard
 };
