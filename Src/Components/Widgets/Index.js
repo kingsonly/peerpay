@@ -353,7 +353,51 @@ const TransCard = ({image, label, label1, label2, label3, ...rest})=> {
    )
  }
 
+
+ const QrCard =({label1, label2, label3, label4, image, status, style, ...rest})=>{
+  return(
+    <View style={[styles.requestcard]} {...rest}> 
+     <View style={{flexDirection:'row'}}>
+     <Image source={image} style={{width:45, height:45, margin:10}}/>
+      <View style={{flexDirection:'column'}}>
+        <Text style={{fontSize:18, fontWeight:'400', marginTop:8}}>{label1}</Text>
+        <Text style={{ color:'#8A8A8F',fontSize:13, fontWeight:'400', marginTop:5}}>{label2}</Text>
+      </View>
+     </View>
+
+      <View style={{marginTop:10, marginRight:10}}>
+        <Text style={{color:'black', fontSize:15, fontWeight:'600'}}>{label3}</Text>
+        <Text style={{color:'#8A8A8F', marginTop:5}}>{label4}</Text>
+      </View>
+      
+
+    </View>
+  )
+}
+
+ const QrsmallCard =({label, image, style, ...rest})=>{
+   return(
+     <TouchableOpacity style={[styles.qrsmallcard, style]} {...rest}>
+       <Image source={image} style={{width:34, height:38}}/>
+       <Text style={{fontSize:15, fontWeight:'300'}}>{label}</Text>
+     </TouchableOpacity>
+   )
+ }
+
 const styles = StyleSheet.create({
+  qrsmallcard:{
+    height:84,
+    backgroundColor:'white',
+    flex:1,
+    marginLeft:10,
+    marginRight:10,
+    borderRadius:6,
+    flexDirection:'column',
+    justifyContent:'center',
+    alignItems:'center',
+    borderWidth:0.249,
+    borderColor:'EFEFF4'
+  },
     statuscard :{
       margin:10, height:24, borderRadius:360, backgroundColor:'#FF9500', justifyContent:'center'
     },
@@ -505,5 +549,7 @@ export {
   ServicesCard,
   TransCard,
   SmallBotton,
-  RequestCard
+  RequestCard,
+  QrsmallCard,
+  QrCard
 };
