@@ -67,11 +67,65 @@ const Botton2 = ({style, label, ...rest}) => {
 const Botton3 = ({icon, style, label, ...rest}) => {
   return (
     <TouchableOpacity style={[styles.botton3, style]} {...rest}>
-      <Image source={icon} style={{height: 24, width: 18, marginRight: 10}} />
+      <Image source={icon} style={{height: 24, width: 24, marginRight: 10}} />
       <Text style={styles.botton3.text}>{label}</Text>
     </TouchableOpacity>
   );
 };
+
+const Botton4 = ({icon, style, label, ...rest}) => {
+  return (
+    <TouchableOpacity style={[styles.botton3, style]} {...rest}>
+     
+      <Text style={styles.botton3.text}>{label}</Text>
+    </TouchableOpacity>
+  );
+};
+
+const RecentContacts =({image, label, ...rest})=>{
+  return(
+    <View style={{flexDirection:'row', marginTop:20,}}>
+
+      <View style={{flexDirection:'column',  marginLeft:10, marginRight:10}}>
+      <View style={{flexDirection:'row', justifyContent:'center'}}>
+      <Image source={image} style={{height:64, width:64,  borderRadius: 360}}/>
+      </View>
+       <Text style={{textAlign:'center', fontSize:12, marginTop:5}}>{label}</Text>
+      </View>
+
+
+      <View style={{flexDirection:'column', marginLeft:10, marginRight:10}}>
+      <View style={{flexDirection:'row', justifyContent:'center'}}>
+      <Image source={image} style={{height:64, width:64,  borderRadius: 360}}/>
+      </View>
+       <Text style={{textAlign:'center', fontSize:12,marginTop:5}}>{label}</Text>
+      </View>
+
+      <View style={{flexDirection:'column', marginLeft:10, marginRight:10}}>
+      <View style={{flexDirection:'row', justifyContent:'center'}}>
+      <Image source={image} style={{height:64, width:64,  borderRadius: 360}}/>
+      </View>
+       <Text style={{textAlign:'center', fontSize:12,marginTop:5}}>{label}</Text>
+      </View>
+
+      <View style={{flexDirection:'column', marginLeft:10, marginRight:10}}>
+      <View style={{flexDirection:'row', justifyContent:'center'}}>
+      <Image source={image} style={{height:64, width:64,  borderRadius: 360}}/>
+      </View>
+       <Text style={{textAlign:'center', fontSize:12,marginTop:5}}>{label}</Text>
+      </View>
+
+      <View style={{flexDirection:'column', marginLeft:10, marginRight:10}}>
+      <View style={{flexDirection:'row', justifyContent:'center'}}>
+      <Image source={image} style={{height:64, width:64,  borderRadius: 360}}/>
+      </View>
+       <Text style={{textAlign:'center', fontSize:12,marginTop:5}}>{label}</Text>
+      </View>
+
+      
+    </View>
+  )
+}
 
 const Tc = ({label, style}) => {
   return (
@@ -384,6 +438,48 @@ const TransCard = ({image, label, label1, label2, label3, ...rest})=> {
    )
  }
 
+ const BorrowFunds =({image, label, amount, bottonLabel, style, ...rest})=> {
+   return(
+    <View style={{flexDirection:'column', justifyContent:'center', marginTop:10}}>
+       <View style={{flexDirection:'row', justifyContent:'center'}}>
+       <Image source={image} style={{ marginTop:30,width:231, height:184}}/>
+       </View>
+      <View>
+        <Text style={{textAlign:'center', marginTop:40, color:'#1C1939', fontSize:20, fontWeight:'600'}}>
+          {label}
+        </Text>
+
+        <Text style={{textAlign:'center', marginTop:20, color:'#1C1939', fontSize:40, fontWeight:'600'}}>
+          {amount}
+        </Text>
+      </View>
+
+    </View>
+   )
+ }
+
+
+
+ const Declined =({image, label, amount, bottonLabel, style, ...rest})=> {
+  return(
+   <View style={{flexDirection:'column', justifyContent:'center', marginTop:10}}>
+      <View style={{flexDirection:'row', justifyContent:'center'}}>
+      <Image source={image} style={{ marginTop:30,width:231, height:184}}/>
+      </View>
+     <View>
+       <Text style={{textAlign:'center', marginTop:40, color:'#1C1939', fontSize:20, fontWeight:'600'}}>
+         {label}
+       </Text>
+
+       <Text style={{textAlign:'center', marginTop:20, color:'#1C1939', fontSize:40, fontWeight:'600'}}>
+         {amount}
+       </Text>
+     </View>
+
+   </View>
+  )
+}
+
 const styles = StyleSheet.create({
   qrsmallcard:{
     height:84,
@@ -482,16 +578,17 @@ const styles = StyleSheet.create({
   botton3: {
     borderColor: '#60A061',
     borderWidth: 1,
-    flex: 1,
     flexDirection: 'row',
     height: 50,
     borderRadius: 8,
     alignItems: 'center',
     justifyContent: 'center',
+     flex:1,
     text: {
       color: '#60A061',
       fontSize: 17,
       fontWeight: '600',
+      textAlign:'center'
     },
   },
   caption: {
@@ -540,6 +637,7 @@ export {
   Botton1,
   Botton2,
   Botton3,
+  Botton4,
   Tc,
   CurrentSatge,
   Left,
@@ -551,5 +649,7 @@ export {
   SmallBotton,
   RequestCard,
   QrsmallCard,
-  QrCard
+  QrCard,
+  BorrowFunds, 
+  RecentContacts
 };

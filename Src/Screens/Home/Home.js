@@ -63,7 +63,8 @@ const Home = ({navigation})=>{
      name="AFCS"
      component={Afcs}
      options={{
-      headerShown: false,
+      headerShadowVisible:true,
+      headerShown: true,
        tabBarIcon: ({ color, size }) => (
          <Icon image={afcsicon} name="home"  size={size}  />
        ),

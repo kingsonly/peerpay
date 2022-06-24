@@ -20,7 +20,7 @@ const Afcs =({navigation})=>{
             label={'Pay on credit'}
             />
             <QrsmallCard
-             onPress ={()=>{navigation.navigate('Borrow')}}
+             onPress ={()=>{navigation.navigate('AfcsBorrow')}}
             image={money}
             label={'Borrow funds'}
             />
