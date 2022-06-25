@@ -142,6 +142,8 @@ import AfcsBorrow from './Src/Screens/Afcs/AfcsBorrow';
 import Borrow from './Src/Screens/Afcs/Borrow';
 import Lend from './Src/Screens/Afcs/Lend';
 import Decline from './Src/Screens/Afcs/Decline';
+import InstantPayment from './Src/Screens/InstantPayment/InstantPayment';
+import Seller from './Src/Screens/Afcs/Seller';
 
 function HomeScreen() {
   return (
@@ -178,6 +180,8 @@ function App() {
         <Stack.Screen name="Borrow" component={Borrow}  options={{headerShown: true, headerTitle:'Borrow Funds', headerShadowVisible:false, headerBackTitleVisible:false}}/>
         <Stack.Screen name="Lend" component={Lend}  options={{headerShown: true, headerTitle:'Send Money', headerShadowVisible:false, headerBackTitleVisible:false}}/>
         <Stack.Screen name="Decline" component={Decline}  options={{headerShown: true, headerTitle:'Borrow', headerShadowVisible:false, headerBackTitleVisible:false}}/>
+        <Stack.Screen name="InstantPayment" component={InstantPayment}  options={{headerShown: true, headerTitle:'Instant Payment', headerShadowVisible:false, headerBackTitleVisible:false}}/>
+        <Stack.Screen name="Seller" component={Seller}  options={{headerShown: true, headerTitle:'Contact', headerShadowVisible:false, headerBackTitleVisible:false}}/>
       </Stack.Navigator>
     </NavigationContainer>
     </UserProvider>

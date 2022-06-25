@@ -480,6 +480,29 @@ const TransCard = ({image, label, label1, label2, label3, ...rest})=> {
   )
 }
 
+const InstantPaymentCard =({image, label, amount, status, bottonLabel, style, ...rest})=>{
+  return(
+    <TouchableOpacity style={{flexDirection:'column', backgroundColor:'#ffffff', justifyContent:'center', flex:1, marginLeft:10, marginRight:10, borderRadius:10}}>
+     <View style={{flexDirection:'row', justifyContent:'center', marginTop:15}}>
+     <Image source={image} style={{height:60, width:59, borderRadius:10}}/>
+     </View>
+     <Text style={{textAlign:'center', marginTop:15, color:'#666666', fontSize:15, fontWeight:'600'}}>{label}</Text>
+     <Text style={{textAlign:'center', marginTop:7, color:'#000000', fontSize:17, fontWeight:'600'}}>{amount}</Text>
+     <Text style={{textAlign:'center', marginTop:7, color:'#8A8A8F', fontSize:17, fontWeight:'400'}}>{status}</Text>
+     <View style={{marginTop:15, marginLeft:15, marginRight:15, marginBottom:15}}>
+     <Botton1
+      label={bottonLabel}
+      style={[style]}
+    />
+     </View>
+
+    </TouchableOpacity>
+  )
+}
+
+
+
+
 const styles = StyleSheet.create({
   qrsmallcard:{
     height:84,
@@ -651,5 +674,6 @@ export {
   QrsmallCard,
   QrCard,
   BorrowFunds, 
-  RecentContacts
+  RecentContacts,
+  InstantPaymentCard
 };
