@@ -4,7 +4,7 @@ import { Subcaption, Botton3, Botton1, RecentContacts} from '../../Components/Wi
 import add from '../../Assets/Icons/Add.png';
 import jane from '../../Assets/Images/jane.png';
 
-const Borrow =()=>{
+const Borrow =({navigation})=>{
     return(
         <SafeAreaView style={{ marginLeft:20, marginRight:20,flex:1, flexDirection:'column', justifyContent:'space-between'}}>
             <View>
@@ -39,6 +39,7 @@ const Borrow =()=>{
 
             <ScrollView horizontal={true} >
             <RecentContacts
+            
              image={jane}
              label={'Amber Julia'}   
              />
@@ -50,7 +51,7 @@ const Borrow =()=>{
             <View style={{ marginTop:10,flexDirection:'row', justifyContent:'space-between'}}>
                <Botton1
                label={'Borrow'}
-               onPress ={()=>{navigation.navigate('Borrow')}}
+               onPress ={()=>{navigation.navigate('Lend')}}
                
                
                /> 

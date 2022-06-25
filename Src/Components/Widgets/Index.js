@@ -84,7 +84,7 @@ const Botton4 = ({icon, style, label, ...rest}) => {
 
 const RecentContacts =({image, label, ...rest})=>{
   return(
-    <View style={{flexDirection:'row', marginTop:20,}}>
+    <TouchableOpacity style={{flexDirection:'row', marginTop:20,}}>
 
       <View style={{flexDirection:'column',  marginLeft:10, marginRight:10}}>
       <View style={{flexDirection:'row', justifyContent:'center'}}>
@@ -123,7 +123,7 @@ const RecentContacts =({image, label, ...rest})=>{
       </View>
 
       
-    </View>
+    </TouchableOpacity>
   )
 }
 

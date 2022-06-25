@@ -140,6 +140,8 @@ import ScanResult from './Src/Screens/Auth/ScanResult';
 import Poc from './Src/Screens/Afcs/Poc';
 import AfcsBorrow from './Src/Screens/Afcs/AfcsBorrow';
 import Borrow from './Src/Screens/Afcs/Borrow';
+import Lend from './Src/Screens/Afcs/Lend';
+import Decline from './Src/Screens/Afcs/Decline';
 
 function HomeScreen() {
   return (
@@ -174,6 +176,8 @@ function App() {
         <Stack.Screen name="poc" component={Poc}  options={{headerShown: true, headerTitle:'Pay On Card', headerShadowVisible:false, headerBackTitleVisible:false}}/>
         <Stack.Screen name="AfcsBorrow" component={AfcsBorrow}  options={{headerShown: true, headerTitle:'Borrow Funds', headerShadowVisible:false, headerBackTitleVisible:false}}/>
         <Stack.Screen name="Borrow" component={Borrow}  options={{headerShown: true, headerTitle:'Borrow Funds', headerShadowVisible:false, headerBackTitleVisible:false}}/>
+        <Stack.Screen name="Lend" component={Lend}  options={{headerShown: true, headerTitle:'Send Money', headerShadowVisible:false, headerBackTitleVisible:false}}/>
+        <Stack.Screen name="Decline" component={Decline}  options={{headerShown: true, headerTitle:'Borrow', headerShadowVisible:false, headerBackTitleVisible:false}}/>
       </Stack.Navigator>
     </NavigationContainer>
     </UserProvider>
