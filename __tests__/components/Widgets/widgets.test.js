@@ -48,10 +48,17 @@ describe("Test All Buttons Components", () => {
     })
 })
 
-describe("Test Widgets", () => {
-    test("renders Widgets", () => {
+describe("Test Notifications Widgets", () => {
+    test("renders Notifications Widgets", () => {
         const component = renderer.create(
             <widgets.Notification></widgets.Notification>
+        )
+    })
+})
+describe("Test Current Stage Widgets", () => {
+    test("renders Current Stage Widgets", () => {
+        const component = renderer.create(
+            <widgets.CurrentSatge></widgets.CurrentSatge>
         )
     })
 })
