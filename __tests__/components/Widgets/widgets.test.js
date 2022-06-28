@@ -79,6 +79,14 @@ describe("Test Welcome back Widgets", () => {
     })
 })
 
+describe("Test Left Widgets", () => {
+    test("renders  Left Widgets", () => {
+        const component = renderer.create(
+            <widgets.Left></widgets.Left>
+        )
+    })
+})
+
 
 
 
