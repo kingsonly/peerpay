@@ -71,5 +71,14 @@ describe("Test Avatar Widgets", () => {
     })
 })
 
+describe("Test Welcome back Widgets", () => {
+    test("renders  Welcome back Widgets", () => {
+        const component = renderer.create(
+            <widgets.Welcomeback></widgets.Welcomeback>
+        )
+    })
+})
+
+
 
 
