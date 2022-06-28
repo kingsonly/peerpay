@@ -31,6 +31,7 @@ const Dashboard = ({navigation})=>{
              <ServicesCard
               image = {afcs}
               label = {'AFCS Payment'}
+              onPress={()=>{navigation.navigate('Afcs')}}
              />
 
              <ServicesCard

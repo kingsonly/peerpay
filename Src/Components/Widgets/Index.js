@@ -178,6 +178,8 @@ const IDCardContainer = ({label, camera, ...rest}) => {
   );
 };
 
+
+
 const Input = ({
   maxLength,
   keyboardType,
@@ -410,7 +412,8 @@ const TransCard = ({image, label, label1, label2, label3, ...rest})=> {
 
  const QrCard =({label1, label2, label3, label4, image, status, style, ...rest})=>{
   return(
-    <View style={[styles.requestcard]} {...rest}> 
+    <TouchableOpacity 
+     style={[styles.requestcard]} {...rest}> 
      <View style={{flexDirection:'row'}}>
      <Image source={image} style={{width:45, height:45, margin:10}}/>
       <View style={{flexDirection:'column'}}>
@@ -425,7 +428,7 @@ const TransCard = ({image, label, label1, label2, label3, ...rest})=> {
       </View>
       
 
-    </View>
+    </TouchableOpacity>
   )
 }
 
@@ -500,6 +503,123 @@ const InstantPaymentCard =({image, label, amount, status, bottonLabel, style, ..
   )
 }
 
+const InstantPaymentHistory =({billIcon, month, day, billType, token, amount, style, ...rest})=>{
+  return(
+    <>
+    <View style={{flexDirection:'row', justifyContent:'space-between'}}>
+       <View style={{flexDirection:'row', alignContent:'center'}}>
+       <View style={{flexDirection:'column', marginLeft:10, marginRight:15}}>
+         <Text style={{color:'#8C8C8C', fontSize:13}}>{month}</Text>
+         <Text style={{color:'#000000', fontSize:15, fontWeight:'600', textAlign:'center', marginTop:4}}>{day}</Text>
+        </View>
+
+
+         <View style={{width:40, height:40, backgroundColor:'#EFEFF4', borderRadius:360, marginRight:15, justifyContent:'center', alignItems:'center'}}>
+           <Image source={billIcon} style={[style]}/>
+         </View>
+         <View>
+         <Text style={{color:'#000000', fontSize:15, fontWeight:'600', textAlign:'left', marginTop:4}}>{billType}</Text>
+         <Text style={{marginTop:4, fontSize:13, color:'#666666', textAlign:'left'}}>{token}</Text>
+         </View>
+
+       </View>
+
+       <View style={{alignItems:'center', justifyContent:'center'}}><Text style={{fontSize:17, fontWeight:'600', color:'#000000'}}>{amount}</Text></View>
+    </View>
+    <View style={{marginLeft:10, height:1, backgroundColor:'#EFEFF4', marginTop:20, marginBottom:20}}> 
+      
+      </View>
+    </>
+  )
+}
+
+
+const PaymentMethod = ({icon, check,paymentType, paymentTypeDescription, label1, label2, label3, style, ...rest})=> {
+  return(
+    <TouchableOpacity style={{  borderColor:'#60A061', borderWidth:1, marginLeft:15, marginRight:15, color:'black', padding:10, flexDirection:'row', borderRadius: 8, backgroundColor:'white', marginTop:10, marginBottom:15}} {...rest}>
+      <View style={{width:56, height:56, backgroundColor:'#EFEFF4', borderRadius:360, marginRight:15, justifyContent:'center', alignItems:'center'}}>
+           <Image source={icon} style={[style]}/>
+         </View>
+
+
+        <View style={{marginLeft:10, flexDirection:'column', justifyContent:'center'}}>
+         <Text style={{fontSize:15, fontWeight:'500'}}>{paymentType}</Text>
+          <Text style={{marginTop:5,fontSize:13, fontWeight:'600', color:'#8A8A8F'}}>{paymentTypeDescription}</Text>
+        </View>
+
+        <View style={{ flex:1, marginLeft:10, flexDirection:'column', justifyContent:'center', alignItems:'flex-end'}}>
+          <Image source={check} style={{width:20, height:20}}/>
+        </View>
+
+      
+    </TouchableOpacity>
+  )
+}
+
+
+const Onscreenkeyboard =()=>{
+
+  return(
+    <>
+    <View style={{ marginLeft:20,marginRight:20, alignItem:'center', marginTop:100, flexWrap:'wrap', flexDirection:'row', justifyContent:'space-between'}}>
+     
+
+      <TouchableOpacity >
+ <Text style={{marginLeft:20, fontSize:24, fontWeight:'600'}}>1</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity >
+         <Text style={{marginLeft:20, fontSize:24, fontWeight:'600'}}>2</Text>
+      </TouchableOpacity>
+     
+     
+      <TouchableOpacity >
+         <Text style={{marginRight:20,fontSize:24, fontWeight:'600'}}>3</Text>
+      </TouchableOpacity>
+    </View>
+
+    <View style={{ marginLeft:20,marginRight:20, marginTop:40, flexWrap:'wrap', flexDirection:'row', justifyContent:'space-between'}}>
+     
+      <TouchableOpacity >
+         <Text style={{marginLeft:20, fontSize:24, fontWeight:'600'}}>4</Text>
+      </TouchableOpacity>
+      <TouchableOpacity >
+         <Text style={{marginLeft:20, fontSize:24, fontWeight:'600'}}>5</Text>
+      </TouchableOpacity>
+     
+      <TouchableOpacity >
+        <Text style={{marginRight:20,fontSize:24, fontWeight:'600'}}>6</Text>
+      </TouchableOpacity>
+      
+    </View>
+
+    <View style={{ marginLeft:20,marginRight:20,marginTop:40, flexWrap:'wrap', flexDirection:'row', justifyContent:'space-between'}}>
+    <TouchableOpacity >
+      <Text style={{marginLeft:20, fontSize:24, fontWeight:'600'}}>7</Text>
+    </TouchableOpacity>
+      
+
+      <TouchableOpacity >
+        <Text style={{marginLeft:20, fontSize:24, fontWeight:'600'}}>8</Text>
+      </TouchableOpacity>
+      
+
+      <TouchableOpacity >
+         <Text style={{marginRight:20,fontSize:24, fontWeight:'600'}}>9</Text>
+      </TouchableOpacity>
+     
+    </View>
+    <View style={{marginLeft:20,marginRight:20, marginTop:40, flexWrap:'wrap', flexDirection:'row', justifyContent:'space-around'}}>
+      <TouchableOpacity >
+       <Text style={{marginLeft:20, fontSize:24, fontWeight:'600'}}>0</Text> 
+        </TouchableOpacity>
+
+    </View>
+
+  </>
+  )
+
+}
 
 
 
@@ -675,5 +795,8 @@ export {
   QrCard,
   BorrowFunds, 
   RecentContacts,
-  InstantPaymentCard
+  InstantPaymentCard,
+  InstantPaymentHistory, 
+  PaymentMethod,
+  Onscreenkeyboard
 };

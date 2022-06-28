@@ -21,7 +21,9 @@ const InstantPayment =()=>{
 
 
     return(
-        <ScrollView style={{flex:1,backgorundColor:'#F5F5F5'}}>
+       <View style={{flex:1, backgroundColor:'#ffffff'}}>
+
+<ScrollView style={{flex:1,backgorundColor:'#ffffff'}}>
             <View style={{marginTop:25, flexDirection:'row'}}>
                 <TouchableOpacity style={{flexDirection:'column', flex:1}}
                 onPress={SwitchToAllTab}>
@@ -49,6 +51,8 @@ const InstantPayment =()=>{
                {showhistory?<InstantPayHistoryTab/> : null}
             </View>
         </ScrollView>
+
+       </View>
     )
 }
 

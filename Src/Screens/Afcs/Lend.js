@@ -82,6 +82,7 @@ const Lend =({navigation})=>{
                <Botton1
                style={{marginRight:10}}
                label={'Lend'}
+               onPress ={()=>{navigation.navigate('Payment')}}
                />
 
                </View>
