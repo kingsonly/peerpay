@@ -64,6 +64,7 @@ const Botton2 = ({style, label, ...rest}) => {
   );
 };
 
+
 const Botton3 = ({icon, style, label, ...rest}) => {
   return (
     <TouchableOpacity style={[styles.botton3, style]} {...rest}>
