@@ -63,5 +63,13 @@ describe("Test Current Stage Widgets", () => {
     })
 })
 
+describe("Test Avatar Widgets", () => {
+    test("renders Avatar Widgets", () => {
+        const component = renderer.create(
+            <widgets.Avatar></widgets.Avatar>
+        )
+    })
+})
+
 
 
