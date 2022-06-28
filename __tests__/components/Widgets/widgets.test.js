@@ -30,4 +30,31 @@ describe(" Test Captions Componenets", () => {
 })
 
 
+describe("Test All Buttons Components", () => {
+    test("renders button 1 componen", () => {
+        const component = renderer.create(
+            <widgets.Botton1></widgets.Botton1>
+        )
+    })
+    test("renders button 2 componen", () => {
+        const component = renderer.create(
+            <widgets.Botton2></widgets.Botton2>
+        )
+    })
+    test("renders button 3 componen", () => {
+        const component = renderer.create(
+            <widgets.Botton3></widgets.Botton3>
+        )
+    })
+})
+
+describe("Test Widgets", () => {
+    test("renders Widgets", () => {
+        const component = renderer.create(
+            <widgets.Notification></widgets.Notification>
+        )
+    })
+})
+
+
 

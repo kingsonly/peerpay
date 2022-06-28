@@ -172,7 +172,7 @@ const Icon = ({image}) => {
   return <Image source={image} style={{width: 24, height: 24}} />;
 };
 
-const Notification = () => {
+ export const Notification = () => {
   const [notecount, setNotecount] = useState(4);
   return (
     <View>
@@ -551,5 +551,6 @@ export {
   SmallBotton,
   RequestCard,
   QrsmallCard,
-  QrCard
+  QrCard,
+  Notification
 };
