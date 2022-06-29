@@ -7,8 +7,8 @@ import {UserProvider, UserContext} from '../../Global/UserContext';
    const{isAuthenticated, setIsAuthenticated, userData, setUserDate, firstTime, setFirstTime} = useContext(UserContext)
    const redirect = () => {
     setTimeout(() => {
-          //navigation.navigate('Onboarding') 
-          navigation.navigate('Home') 
+          navigation.navigate('Onboarding') 
+          //navigation.navigate('Home') 
      },4000);
 }  
    if(firstTime){

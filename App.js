@@ -137,6 +137,8 @@ import Onboarding4 from './Src/Screens/Onboarding/Onboarding4';
 import Onboarding5 from './Src/Screens/Onboarding/Onboarding5';
 import IdCard from './Src/Screens/Auth/IdCard';
 import ScanResult from './Src/Screens/Auth/ScanResult';
+import Poc from './Src/Screens/Afcs/Poc';
+import Borrow from './Src/Screens/Afcs/Borrow';
 
 function HomeScreen() {
   return (
@@ -168,6 +170,8 @@ function App() {
         <Stack.Screen name="PhoneVerification" component={PhoneVerification}  options={{headerShown: true, headerTitle:'Phone Verification', headerShadowVisible:false, headerBackTitleVisible:false}}/>
         <Stack.Screen name="IdCard" component={IdCard}  options={{headerShown: true, headerTitle:'ID Card', headerShadowVisible:false, headerBackTitleVisible:false}}/>
         <Stack.Screen name="ScanResult" component={ScanResult}  options={{headerShown: true, headerTitle:'Scan Result', headerShadowVisible:false, headerBackTitleVisible:false}}/>
+        <Stack.Screen name="poc" component={Poc}  options={{headerShown: true, headerTitle:'Pay On Card', headerShadowVisible:false, headerBackTitleVisible:false}}/>
+        <Stack.Screen name="Borrow" component={Borrow}  options={{headerShown: true, headerTitle:'Borrow Funds', headerShadowVisible:false, headerBackTitleVisible:false}}/>
       </Stack.Navigator>
     </NavigationContainer>
     </UserProvider>

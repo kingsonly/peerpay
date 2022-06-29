@@ -10,6 +10,7 @@ import qr from '../../Assets/Icons/qr.png';
 import profile from '../../Assets/Icons/portfolio.png';
 import Dashboard from '../../Components/Layouts/Dashboard.js';
 import Request from '../Request/Request.js';
+import Poc from '../Afcs/Poc';
 import Qr from '../QrCode/Qr.js';
 import Afcs from '../Afcs/Afcs.js';
 import Portfolio from '../Portfolio/Portfolio.js';
@@ -68,6 +69,7 @@ const Home = ({navigation})=>{
        ),
      }}
       />
+      
 
 <Tab.Screen 
      name="Portfolio"
