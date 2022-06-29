@@ -1,4 +1,0 @@
-${PODS_ROOT}/Target Support Files/Pods-Peerpay-PeerpayTests/Pods-Peerpay-PeerpayTests-frameworks.sh
-${PODS_XCFRAMEWORKS_BUILD_DIR}/double-conversion/double-conversion.framework/double-conversion
-${PODS_XCFRAMEWORKS_BUILD_DIR}/glog/glog.framework/glog
-${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL/OpenSSL.framework/OpenSSL
