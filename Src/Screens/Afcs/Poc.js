@@ -24,7 +24,7 @@ const Poc =({navigation})=>{
              <Botton4
              label={'Inform Seller'}
              style={{marginLeft:15, marginRight:15}}
-             onPress ={()=>{navigation.navigate('Seller')}}
+             onPress ={()=>{navigation.navigate('Success')}}
 
              />
              <Botton1

@@ -621,6 +621,31 @@ const Onscreenkeyboard =()=>{
 
 }
 
+const SuccessCard =({ navigation ,style,icon,label, description, date, reference, ...rest})=>{
+  return(
+    <View style={{ borderRadius:10, marginTop:80,justifyContent:'center', alignItem:'center', flexDirection:'column', marginLeft:20, marginRight:20, backgroundColor:'#ffffff'}}>
+       <View style={{ marginBottom:20,marginTop:15,flexDirection:'row', justifyContent:'center', marginTop:15}}>
+     <Image source={icon} style={{height:80, width:80, borderRadius:10}}/>
+     </View>
+     <Text style={{textAlign:'center', fontSize:40, fontWeight:'600'}}>{label}</Text>
+     <Text style={{lineHeight:25, marginTop:15, color:'#666666',textAlign:'center', fontSize:17, fontWeight:'400'}}>{description}</Text>
+     <Text style={{lineHeight:25, marginTop:15, color:'#666666',textAlign:'center', fontSize:17, fontWeight:'400'}}>Transaction done on {date}</Text>
+
+     <Text style={{lineHeight:25, marginTop:5, color:'#666666',textAlign:'center', fontSize:17, fontWeight:'400'}}>Your reference number is {reference}</Text>
+
+     <TouchableOpacity  style={{ marginTop:25, marginBottom:30, flexDirection:'row', marginLeft:15, marginRight:15}} {...rest}>
+            
+            <Botton1
+            style={{marginRight:10}}
+            label={'Done'}
+            // onPress ={()=>{navigation.navigate(Home)}}
+            />
+
+            </TouchableOpacity>
+    </View>
+  )
+}
+
 
 
 const styles = StyleSheet.create({
@@ -798,5 +823,6 @@ export {
   InstantPaymentCard,
   InstantPaymentHistory, 
   PaymentMethod,
-  Onscreenkeyboard
+  Onscreenkeyboard,
+  SuccessCard
 };

@@ -30,6 +30,8 @@ import Seller from './Src/Screens/Afcs/Seller';
 import Payment from './Src/Screens/Afcs/Payment';
 import Afcs from './Src/Screens/Afcs/Afcs';
 import Amount from './Src/Screens/Afcs/Amount';
+import Success from './Src/Screens/Afcs/Success';
+
 
 
 
@@ -65,6 +67,7 @@ function App() {
         <Stack.Screen name="Payment" component={Payment}  options={{headerShown: true, headerTitle:'Payment', headerShadowVisible:false, headerBackTitleVisible:false}}/>
         <Stack.Screen name="Afcs" component={Afcs}  options={{headerShown: true, headerTitle:'Payment', headerShadowVisible:false, headerBackTitleVisible:false}}/>
         <Stack.Screen name="Amount" component={Amount}  options={{headerShown: true, headerTitle:'Amount', headerShadowVisible:false, headerBackTitleVisible:false}}/>
+        <Stack.Screen name="Success" component={Success}  options={{headerShown: true, headerTitle:'Success', headerShadowVisible:false, headerBackTitleVisible:false}}/>
       </Stack.Navigator>
     </NavigationContainer>
     </UserProvider>
