@@ -1,1 +1,1 @@
-!<symlink>ÿþ.
+../../../../Flipper-PeerTalk/peertalk/PTChannel.h

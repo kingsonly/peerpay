@@ -1,1 +1,1 @@
-!<symlink>ÿþ.
+../../../SocketRocket/SocketRocket/Internal/IOConsumer/SRIOConsumerPool.h

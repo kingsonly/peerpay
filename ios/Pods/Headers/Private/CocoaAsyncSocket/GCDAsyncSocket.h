@@ -1,1 +1,1 @@
-!<symlink>ÿþ.
+../../../CocoaAsyncSocket/Source/GCD/GCDAsyncSocket.h

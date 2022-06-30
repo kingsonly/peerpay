@@ -1,1 +1,1 @@
-!<symlink>ÿþ.
+../../../../../node_modules/react-native-screens/ios/RNSScreenStack.h

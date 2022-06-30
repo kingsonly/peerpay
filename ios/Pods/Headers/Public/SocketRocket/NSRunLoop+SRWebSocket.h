@@ -1,1 +1,1 @@
-!<symlink>ÿþ.
+../../../SocketRocket/SocketRocket/NSRunLoop+SRWebSocket.h

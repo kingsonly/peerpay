@@ -1,1 +1,1 @@
-!<symlink>ÿþ.
+../../../SocketRocket/SocketRocket/Internal/RunLoop/SRRunLoopThread.h

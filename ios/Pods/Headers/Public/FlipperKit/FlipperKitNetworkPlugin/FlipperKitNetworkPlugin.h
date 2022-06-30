@@ -1,1 +1,1 @@
-!<symlink>ÿþ.
+../../../../FlipperKit/iOS/Plugins/FlipperKitNetworkPlugin/FlipperKitNetworkPlugin/FlipperKitNetworkPlugin.h

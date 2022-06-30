@@ -1,1 +1,1 @@
-!<symlink>ÿþ.
+../../../../Flipper-RSocket/rsocket/RSocketErrors.h

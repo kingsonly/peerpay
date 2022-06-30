@@ -1,1 +1,1 @@
-!<symlink>ÿþ.
+../../../Flipper/xplat/Flipper/FlipperTransportTypes.h

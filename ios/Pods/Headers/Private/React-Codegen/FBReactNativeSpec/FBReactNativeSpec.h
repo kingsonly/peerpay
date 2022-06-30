@@ -1,1 +1,1 @@
-!<symlink>ÿþ.
+../../../../../build/generated/ios/FBReactNativeSpec/FBReactNativeSpec.h

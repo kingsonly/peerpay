@@ -1,1 +1,1 @@
-!<symlink>ÿþ.
+../../../Flipper/xplat/Flipper/FlipperState.h

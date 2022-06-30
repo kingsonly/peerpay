@@ -1,1 +1,1 @@
-!<symlink>ÿþ.
+../../../../DoubleConversion/double-conversion/double-conversion.h

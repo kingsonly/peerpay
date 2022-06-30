@@ -1,1 +1,1 @@
-!<symlink>ÿþ.
+../../../../../Flipper-Folly/folly/functional/Partial.h

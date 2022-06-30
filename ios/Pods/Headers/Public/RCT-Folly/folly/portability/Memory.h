@@ -1,1 +1,1 @@
-!<symlink>ÿþ.
+../../../../../RCT-Folly/folly/portability/Memory.h

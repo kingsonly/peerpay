@@ -1,1 +1,1 @@
-!<symlink>ÿþ.
+../../../FlipperKit/iOS/FlipperKit/FlipperKitCertificateProvider.h

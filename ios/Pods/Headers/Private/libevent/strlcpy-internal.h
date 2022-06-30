@@ -1,1 +1,1 @@
-!<symlink>ÿş.
+../../../libevent/strlcpy-internal.h
