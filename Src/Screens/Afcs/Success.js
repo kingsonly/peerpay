@@ -5,8 +5,8 @@ import successicon from '../../Assets/Icons/successIcon.png';
 
 const Success =({navigation})=>{
     const Gohome=()=>{
-        // navigation.navigate('Home')
-        alert("working")
+        navigation.navigate('Home')
+    
     }
     return(
         <View style={{flex:1, backgroundColor:'#000000'}}>
