@@ -341,7 +341,6 @@ const TransCard = ({image, label, label1, label2, label3, ...rest})=> {
          <Text style={{ color:'#8A8A8F',fontSize:13, fontWeight:'400', marginTop:5}}>{label2}</Text>
          <Text style={{fontSize:18, fontWeight:'400', marginTop:5}}>{label3}</Text>
          <Text style={{ color:'#8A8A8F',fontSize:13, fontWeight:'400', marginTop:5, marginBottom:10}}>{label4}</Text>
-
        </View>
       </View>
 
@@ -369,8 +368,6 @@ const TransCard = ({image, label, label1, label2, label3, ...rest})=> {
         <Text style={{color:'black', fontSize:15, fontWeight:'600'}}>{label3}</Text>
         <Text style={{color:'#8A8A8F', marginTop:5}}>{label4}</Text>
       </View>
-      
-
     </View>
   )
 }

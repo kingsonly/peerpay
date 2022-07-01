@@ -87,6 +87,14 @@ describe("Test Left Widgets", () => {
     })
 })
 
+describe("Test IDCARD Container", () => {
+    test("renders   IDCARD Container", () => {
+        const component = renderer.create(
+            <widgets.IDCardContainer></widgets.IDCardContainer>
+        )
+    })
+})
+
 
 
 
