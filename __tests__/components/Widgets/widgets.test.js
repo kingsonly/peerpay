@@ -120,6 +120,15 @@ describe("Test Service Card Component", () => {
     })
 })
 
+describe("Test Trans Card Component", () => {
+    test("renders Trans Card Component", () => {
+        const component = renderer.create(
+            <widgets.TransCard></widgets.TransCard>
+        )
+    })
+})
+
+
 
 
 
