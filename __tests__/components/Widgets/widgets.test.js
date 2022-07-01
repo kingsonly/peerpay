@@ -1,7 +1,6 @@
 import 'react-native';
 import React from 'react';
 import * as widgets from "../../../Src/Components/Widgets/Index"
-// Note: test renderer must be required after react-native.
 import renderer from 'react-test-renderer';
 
 it('renders correctly', () => {
@@ -91,6 +90,32 @@ describe("Test IDCARD Container", () => {
     test("renders   IDCARD Container", () => {
         const component = renderer.create(
             <widgets.IDCardContainer></widgets.IDCardContainer>
+        )
+    })
+})
+
+
+describe("Test Input field Component", () => {
+    test("renders   Input field Component", () => {
+        const component = renderer.create(
+            <widgets.Input></widgets.Input>
+        )
+    })
+})
+
+
+describe("Test Chart Component", () => {
+    test("renders   Chart Component", () => {
+        const component = renderer.create(
+            <widgets.ChartSegment></widgets.ChartSegment>
+        )
+    })
+})
+
+describe("Test Service Card Component", () => {
+    test("renders Service Card Component", () => {
+        const component = renderer.create(
+            <widgets.ServicesCard></widgets.ServicesCard>
         )
     })
 })
