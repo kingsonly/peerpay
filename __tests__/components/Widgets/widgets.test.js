@@ -184,6 +184,18 @@ describe("Test Signup Screen", () => {
         });
         expect(element.props.value).toEqual('09030031914');
     });
+
+    // it('should handle onChange event on i agree', () => {
+    //     const testInstance = signUpWidget.root;
+    //     const mEvent = { target: { value: true } };
+    //     const element = testInstance.findByProps({ testID: 'agree' })
+    //     act(() => {
+    //         element.props.onPress();
+
+    //     });
+    //     console.log(element.props)
+    //     expect(element.props.value).toEqual(true);
+    // });
 })
 
 

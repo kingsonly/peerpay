@@ -89,7 +89,7 @@ const Signup = ({ navigation }) => {
           secureTextEntry={false}
           required
         />
-        <TouchableOpacity style={{ marginTop: 20 }} onPress={() => { Agree() }}>
+        <TouchableOpacity testID='agree' style={{ marginTop: 20 }} onPress={() => { Agree() }}>
           <View style={{ flexDirection: 'row' }}>
             {
               iagree ? (<><Image source={check} style={{ width: 20, height: 20 }} />
