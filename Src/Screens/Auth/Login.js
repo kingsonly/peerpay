@@ -29,6 +29,8 @@ const Login = ({ navigation }) => {
                     style={{ fontSize: 16, color: 'black', fontWeight: '400' }}
                 />
 
+                
+
                 <Input
                     testID="password"
                     style={{ fontSize: 17, fontWeight: '400', textAlign: 'center', borderWidth: 1, borderColor: '#D8D8D8', backgroundColor: '#EFEFF4', marginTop: 40, width: '100%', color: '#8A8A8F' }}
