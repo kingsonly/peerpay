@@ -1,1 +1,1 @@
-!<symlink>ÿþ.
+../../../../FlipperKit/iOS/Plugins/FlipperKitUserDefaultsPlugin/FKUserDefaultsPlugin.h

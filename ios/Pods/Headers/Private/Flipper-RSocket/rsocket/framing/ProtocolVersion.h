@@ -1,1 +1,1 @@
-!<symlink>ÿþ.
+../../../../../Flipper-RSocket/rsocket/framing/ProtocolVersion.h

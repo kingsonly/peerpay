@@ -1,1 +1,1 @@
-!<symlink>ÿþ.
+../../../../../node_modules/react-native-safe-area-context/ios/RNCSafeAreaContext.h

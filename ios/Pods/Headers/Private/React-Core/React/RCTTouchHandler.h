@@ -1,1 +1,1 @@
-!<symlink>ÿþ.
+../../../../../../node_modules/react-native/React/Base/RCTTouchHandler.h

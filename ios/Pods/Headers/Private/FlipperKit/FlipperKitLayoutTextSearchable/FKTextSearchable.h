@@ -1,1 +1,1 @@
-!<symlink>ÿþ.
+../../../../FlipperKit/iOS/Plugins/FlipperKitLayoutPlugin/FlipperKitLayoutTextSearchable/FKTextSearchable.h

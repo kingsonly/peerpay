@@ -1,1 +1,1 @@
-!<symlink>ÿþ.
+../../../../../Flipper-RSocket/yarpl/flowable/ThriftStreamShim.h

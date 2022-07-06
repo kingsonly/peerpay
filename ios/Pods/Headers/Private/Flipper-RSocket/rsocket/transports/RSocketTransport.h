@@ -1,1 +1,1 @@
-!<symlink>ÿþ.
+../../../../../Flipper-RSocket/rsocket/transports/RSocketTransport.h

@@ -1,1 +1,1 @@
-!<symlink>ÿþ.
+../../../../RCT-Folly/folly/Uri.h

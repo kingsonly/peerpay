@@ -1,1 +1,1 @@
-!<symlink>ÿþ.
+../../../../Flipper-Folly/folly/SingletonThreadLocal.h
