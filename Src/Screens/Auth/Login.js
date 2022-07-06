@@ -40,11 +40,13 @@ const Login = ({ navigation }) => {
                     required
                 />
 
-                <View style={{ flexDirection: 'row', marginTop: 30 }}>
-                    <Botton1
-                        label={'Sign In'}
-                    />
-                </View>
+      <View style={{ flexDirection: 'row', marginTop:30}}>
+              <Botton1
+              label = {'Sign In'}
+              onPress={()=>{navigation.navigate('Home')}}
+              
+              />
+          </View>
 
                 <View style={{ flexDirection: 'row', marginTop: 18 }}>
                     <Botton3

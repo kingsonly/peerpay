@@ -17,8 +17,6 @@ import {UserProvider, UserContext} from '../../Global/UserContext';
      navigation.navigate('Login') 
    }
     
-
-  
     return(
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
          <Image source={logo}  style={{ height:69.74, width:250}}/>

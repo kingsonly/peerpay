@@ -45,7 +45,7 @@ const Onboarding5 = ({navigation}) => {
             <View style={{flexDirection: 'row'}}>
               <Botton1
               label = {'Get Started'}
-              onPress={()=> navigation.navigate('Signup')}
+              onPress={()=> navigation.navigate('Login')}
               />
               
             </View>
