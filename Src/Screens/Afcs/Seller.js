@@ -4,18 +4,18 @@ import { Subcaption, Botton3, Botton1, RecentContacts} from '../../Components/Wi
 import add from '../../Assets/Icons/Add.png';
 import jane from '../../Assets/Images/jane.png';
 
-const Borrow =({navigation})=>{
+const Seller =({navigation})=>{
     return(
         <SafeAreaView style={{ marginLeft:20, marginRight:20,flex:1, flexDirection:'column', justifyContent:'space-between'}}>
             <View>
              <Subcaption
-             label={'Borrow From'}
+             label={'Buy From'}
              style={{color:'black', textAlign:'left', fontSize:17, fontWeight:'600', marginTop:10}}
              />
 
           <View style={{ marginTop:10,flexDirection:'row', justifyContent:'space-between'}}>
                <Botton3
-               label={'Choose Lender'}
+               label={'Choose Seller'}
                onPress ={()=>{navigation.navigate('Borrow')}}
                icon={add}
                
@@ -50,7 +50,7 @@ const Borrow =({navigation})=>{
 
             <View style={{ marginTop:10,flexDirection:'row', justifyContent:'space-between'}}>
                <Botton1
-               label={'Borrow'}
+               label={'Proceed'}
                onPress ={()=>{navigation.navigate('Lend')}}
                
                
@@ -64,4 +64,4 @@ const Borrow =({navigation})=>{
 }
 
 
-export default Borrow
+export default Seller
