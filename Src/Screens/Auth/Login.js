@@ -6,11 +6,6 @@ const Login = ({ navigation }) => {
 
 
     const [password, setPassword] = useState()
-
-    const data = {
-        password,
-    }
-
     return (
         <SafeAreaView style={{ flex: 1, alignItems: 'center', justifyContent: 'space-between' }}>
 
@@ -29,8 +24,6 @@ const Login = ({ navigation }) => {
                     style={{ fontSize: 16, color: 'black', fontWeight: '400' }}
                 />
 
-                
-
                 <Input
                     testID="password"
                     style={{ fontSize: 17, fontWeight: '400', textAlign: 'center', borderWidth: 1, borderColor: '#D8D8D8', backgroundColor: '#EFEFF4', marginTop: 40, width: '100%', color: '#8A8A8F' }}
@@ -38,17 +31,16 @@ const Login = ({ navigation }) => {
                     placeholder={'Enter password'}
                     placeholderTextColor={'#8A8A8F'}
                     onChangeText={(e) => setPassword(e.target.value)}
+                    value={password}
                     //    value={}
                     required
                 />
 
-      <View style={{ flexDirection: 'row', marginTop:30}}>
-              <Botton1
-              label = {'Sign In'}
-              onPress={()=>{navigation.navigate('Home')}}
-              
-              />
-          </View>
+                <View style={{ flexDirection: 'row', marginTop: 30 }}>
+                    <Botton1
+                        label={'Sign In'}
+                    />
+                </View>
 
                 <View style={{ flexDirection: 'row', marginTop: 18 }}>
                     <Botton3
