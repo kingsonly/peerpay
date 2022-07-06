@@ -15,12 +15,12 @@ const Afcs =({navigation})=>{
     <ScrollView style={{flex:1,backgorundColor:'#F5F5F5'}}>
         <View style={{flexDirection:'row',flex:1, marginTop:70, marginLeft:10, marginRight:10, justifyContent:'space-between'}}>
             <QrsmallCard
-            onPress ={()=>{navigation.navigate('poc')}}
+            onPress ={()=>{navigation.navigate('Amount')}}
             image={paycard}
             label={'Pay on credit'}
             />
             <QrsmallCard
-             onPress ={()=>{navigation.navigate('Borrow')}}
+             onPress ={()=>{navigation.navigate('AfcsBorrow')}}
             image={money}
             label={'Borrow funds'}
             />
@@ -50,6 +50,7 @@ const Afcs =({navigation})=>{
             image={ike}
             label3={'₦5,000'}
             label4={'Loan'}
+            onPress={()=> navigation.navigate('Lend')}
             />
 
             <QrCard
@@ -58,6 +59,7 @@ const Afcs =({navigation})=>{
             image={ade}
             label3={'₦5,000'}
             label4={'Credit'}
+            onPress={()=> navigation.navigate('Lend')}
             />
 
         </View>
@@ -74,6 +76,7 @@ const Afcs =({navigation})=>{
             image={john}
             label3={'₦5,000'}
             label4={'Credit'}
+            onPress={()=> navigation.navigate('Lend')}
             />
 
             <QrCard
@@ -82,6 +85,7 @@ const Afcs =({navigation})=>{
             image={simon}
             label3={'₦5,000'}
             label4={'Loan'}
+            onPress={()=> navigation.navigate('Lend')}
             />
 
         </View>

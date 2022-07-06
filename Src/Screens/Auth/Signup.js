@@ -95,7 +95,7 @@ const Signup =({navigation})=> {
             <View style={{flexDirection: 'row', marginTop:10}}>
               <Botton1
               label = {'Sign Up'}
-              onPress={()=>{Register(data)}}
+              onPress={()=>{navigation.navigate('VerificationCode')}}
               />
           </View>
         </View>

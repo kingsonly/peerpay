@@ -35,6 +35,7 @@ const Login =({navigation})=> {
       <View style={{ flexDirection: 'row', marginTop:30}}>
               <Botton1
               label = {'Sign In'}
+              onPress={()=>{navigation.navigate('Home')}}
               
               />
           </View>
